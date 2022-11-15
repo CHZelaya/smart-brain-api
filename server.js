@@ -27,7 +27,6 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors());
 
-app.get('/', (req, res) => { 'App is running, Hello world! Hola Mundo!' })
 
 app.post('/signin', (req, res) => { signin.handleSignIn(req, res, db, bcrypt) });
 
