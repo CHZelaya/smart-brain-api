@@ -18,7 +18,7 @@ const db = knex({
         host: 'containers-us-west-123.railway.app',
         port: 6253,
         user: 'postgres',
-        password: 'HnxoadXXXQmjlaShEAQH',
+        password: process.env.PGPASSWORD,
         database: 'railway'
     }
 });
