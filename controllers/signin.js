@@ -19,7 +19,6 @@ const handleSignIn = (req, res, db, bcrypt) => {
             }
         })
         .catch(err => res.status(400).json("Wrong Credentials"));
-    return alert('Wrong credentials')
 };
 
 module.exports = {
